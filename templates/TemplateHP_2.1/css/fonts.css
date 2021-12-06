@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'HP Simplified';
+  src: url('../fonts/HPSimplified-Bold.woff2') format('woff2'),
+    url('../fonts/HPSimplified-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HP Simplified';
+  src: url('../fonts/HPSimplified-Regular.woff2') format('woff2'),
+    url('../fonts/HPSimplified-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HP Simplified AS W';
+  src: url('../fonts/HPSimplifiedASW-Light.woff2') format('woff2'),
+    url('../fonts/HPSimplifiedASW-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HP Simplified AS W';
+  src: url('../fonts/HPSimplifiedASW-Bold.woff2') format('woff2'),
+    url('../fonts/HPSimplifiedASW-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HP Simplified AS W';
+  src: url('../fonts/HPSimplifiedASW-Regular.woff2') format('woff2'),
+    url('../fonts/HPSimplifiedASW-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

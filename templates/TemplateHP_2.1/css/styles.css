@@ -1,0 +1,64 @@
+html {
+	font-size: 22px;
+}
+
+body {
+	font-family: 'HP Simplified', sans-serif;
+	line-height: 1.15em;
+	background-color: #e4e1e1;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 58px;
+	margin-bottom: 0px;
+	word-break: break-word;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(74.91deg, #AFE36C 13.98%, #00B4D6 32.49%, #EC0188 62.12%);
+}
+
+.container {
+	width: 860px;
+	height: 860px;
+	max-width: 100%;
+	background: url(../media/img-bg.jpg) 0 0 no-repeat;
+	overflow: hidden;
+}
+
+.product-image-container {
+	height: 100%;
+}
+
+.product-image-container img {
+	object-fit: contain;
+	max-width: 600px;
+}
+
+.main-gradient {
+	text-align: center;
+}
+
+th {
+	width: 33.333%;
+	color: #009DDA;
+	font-weight: 400 !important;
+	border: 2px solid #009DDA !important;
+}
+
+td {
+	color: #666666;
+	border: 2px solid #009DDA !important;
+}
+
+td,
+th {
+	padding: 0.5rem !important;
+}
+
+.text-block {
+	padding: 1.5em 0;
+	width: 530px;
+	margin: 0 auto;
+}

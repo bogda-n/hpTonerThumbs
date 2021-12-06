@@ -1,0 +1,18 @@
+{
+  "name": "hptonerthumbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "fs-extra": "^10.0.0",
+    "puppeteer": "^11.0.0",
+    "qs": "^6.10.1",
+    "simple-excel-to-json": "^2.3.0"
+  }
+}

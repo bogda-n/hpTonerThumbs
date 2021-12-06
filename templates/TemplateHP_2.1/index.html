@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HP ink Tamplate</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row header">
+      <div class="col-12 p-0">
+        <div class="text-block text-center">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row specs">
+      <div class="col-12 pl-3 pr-3">
+        <table class="tbl w-100">
+          <tbody>
+            <tr id="title">
+              <th></th>
+              <td></td>
+            </tr>
+            <tr id="color">
+              <th></th>
+              <td></td>
+            </tr>
+            <tr id="p-yield">
+              <th></th>
+              <td></td>
+            </tr>
+            <tr id="compatibility">
+              <th></th>
+              <td>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row product-image">
+      <div class="col-12 d-flex product-image-container justify-content-center p-0 ">
+        <img class="p-3" src="" alt="">
+      </div>
+    </div>
+  
+  
+  </div>
+
+  <script src="../../node_modules/qs/dist/qs.js"></script>
+
+  <script>
+    function resizeImage() {
+      const $container = document.querySelector('.container')
+      const $header = document.querySelector('.header')
+      const $specs = document.querySelector('.tbl')
+      const $image = document.querySelector('.product-image')
+      $image.style.height = $container.clientHeight - $header.clientHeight - $specs.clientHeight + 'px'
+    }
+
+    function setProduct() {
+      const params = Qs.parse(window.location.search.substring(1))
+
+      const $pageTitle = document.querySelector('.header h1')
+      $pageTitle.innerText = params.pageTitle
+
+      const $image = document.querySelector('.product-image img')
+      $image.src = params.image
+
+      const $titleKey = document.querySelector('#title th')
+      $titleKey.innerText = params.translations[params.locale]['productName']
+
+      const $titleValue = document.querySelector('#title td')
+      $titleValue.innerText = params.productName
+
+      const $colorKey = document.querySelector('#color th')
+      $colorKey.innerText = params.translations[params.locale]['color']
+      const $colorValue = document.querySelector('#color td')
+      $colorValue.innerText = params.color
+
+      const $yieldKey = document.querySelector('#p-yield th')
+      $yieldKey.innerText = params.translations[params.locale]['capacity']
+      const $yieldValue = document.querySelector('#p-yield td')
+      $yieldValue.innerText = params.capacity
+
+      const $compatibilityKey = document.querySelector('#compatibility th')
+      $compatibilityKey.innerText = params.translations[params.locale]['compatibility']
+      const $compatibilityValue = document.querySelector('#compatibility td')
+      $compatibilityValue.innerText = params.compatibility
+    }
+
+    setProduct()
+
+    window.onload = resizeImage
+
+  </script>
+
+</body>
+
+
+</html>
